@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background: linear-gradient(to right, #c12121, magenta , pink);
+    height: 100vh;
+}
+
+.title{
+    padding: 10px;
+    font-family: Verdana;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container{
+    height: 75%;
+    width: max(50%,680px);
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    place-content: center;
+    gap: 20px;
+    background-color: rgba(225, 237, 240, 0.786);
+    border-radius: 15px;
+    margin: 12px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.355);
+}
+
+.block{
+    height: 22vh;
+    background-color: gold;
+    border: 4px solid black;
+    border-radius: 25px;
+}
+
+.block:hover{
+    background-color: yellow;
+}
+
+.btn{
+    height: 8%;
+    margin: 15px auto;
+    width: 60%;
+    max-width: 90%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn > button{
+    padding: 8px 16px;
+    transform: scale(1.2);
+    font-family: Verdana;
+    background-color: rgb(0, 75, 128);
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgb(3, 117, 198);
+    color: yellow;
+    cursor: pointer;
+}
+
+.content-X::after{
+    content: "X";
+}
+
+.content-X{
+    color: #414141;
+    font-size: 7.5rem;
+    font-weight: lighter;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.content-O::after{
+    content: "O";
+}
+
+.content-O{
+    color: #414141;
+    font-size: 7.5rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.game-over{
+    width: 50vw;
+    margin: 12px auto;
+    padding: 10px 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(225, 237, 240, 0.786);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.355);
+    text-align: center;
+}
+
+.gm-over{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+#New-game_btn{
+    padding: 8px 16px;
+    transform: scale(1.2);
+    font-family: Verdana;
+    background-color: rgb(0, 75, 128);
+    color: white;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+#New-game_btn:hover{
+    background-color: rgb(3, 117, 198);
+    color: yellow;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
